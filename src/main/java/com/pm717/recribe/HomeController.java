@@ -28,7 +28,6 @@ public class HomeController {
 	
 	SqlSession sqlSession;
 	ServletContext context;
-	
 
 	@Autowired
 	public void setContext(ServletContext context) {
@@ -58,5 +57,12 @@ public class HomeController {
 		
 		return "home";
 	}
+	
+	
+	@RequestMapping(value="/sample", method = RequestMethod.GET)
+	public String sample(Model model) {
+		return "/sample";
+	}
+	
 	
 }

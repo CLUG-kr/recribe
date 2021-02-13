@@ -1,4 +1,4 @@
-package com.pm717.recribe.controller;
+package com.pm717.recribe;
 
 import javax.servlet.http.HttpSession;
 
@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.pm717.recribe.beans.C;
 
-@Controller
+@Controller(value="/member")
 public class MemberController {
 	
 	private SqlSession sqlSession;
@@ -25,9 +25,8 @@ public class MemberController {
 		C.sqlSession = sqlSession;
 	}
 	
-	@RequestMapping("/sample.do")
-	public String sample(Model model) {
-		return "/sample";
-	}
-	
+	/*
+	 * @RequestMapping(value="/sample", method = RequestMethod.GET) public String
+	 * sample(Model model) { return "/sample"; }
+	 */
 }
