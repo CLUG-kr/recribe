@@ -45,40 +45,23 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">Recribe</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="search">검색하기</a></li>
+          <li><a href="review">리뷰보기</a></li>
+          <li><a href="community">소통하기</a></li>
+          <li><a href="friend">친구목록</a></li>
+          <li><a href="group">그룹찾기</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+      <a href="loginOrSignup" class="get-started-btn scrollto">로그인/회원가입</a>
 
     </div>
   </header><!-- End Header -->
@@ -89,12 +72,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Better Solutions For Your Business</h1>
-          <h2>We are team of talanted designers making websites with Bootstrap</h2>
-          <div class="d-lg-flex">
+          <h1>Recommend & Subscribe</h1>
+          <h2>We are PM717 team</h2>
+          <!--<div class="d-lg-flex">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
-          </div>
+          </div>-->
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
@@ -107,7 +90,7 @@
   <main id="main">
 
     <!-- ======= Cliens Section ======= -->
-    <section id="cliens" class="cliens section-bg">
+    <!-- <section id="cliens" class="cliens section-bg">
       <div class="container">
 
         <div class="row" data-aos="zoom-in">
@@ -139,7 +122,7 @@
         </div>
 
       </div>
-    </section><!-- End Cliens Section -->
+    </section><!-- End Cliens Section --> -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -173,114 +156,6 @@
 
       </div>
     </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/skills.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-
-            <div class="skills-content">
-
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Photoshop <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
@@ -745,7 +620,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter">
+    <!-- <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -757,55 +632,46 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  -->
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
+            <h3>Recribe</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              06974 서울특별시 동작구 흑석로 84 <br>
+                         중앙대학교<br>
+               KOREA <br><br>
+              <strong>Tel:</strong> 02.820.5114~6114<br>
+              <strong>Email1:</strong> b2nyb2st77@gmail.com<br>
+              <strong>Email2:</strong> jiin62622@gmail.com<br>
+              <strong>Email3:</strong> thgus3456789@gmail.com<br>
             </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Instagrams</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bxl-instagram"></i> <a href="https://www.instagram.com/soo__beeny/">SooBeen</a></li>
+              <li><i class="bx bxl-instagram"></i> <a href="https://www.instagram.com/acquaintanxx.k/">JiIn</a></li>
+              <li><i class="bx bxl-instagram"></i> <a href="https://www.instagram.com/soso._.hyeon/">SoHyeon</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
+            <h4>우리의 한마디</h4>
+            <p>ㅅㅂ: 힘들어요 살려주세요!<br>
+                          ㅈㅇ: 일벌리기만 좋아하는 자의 최후다<br>
+                          ㅅㅎ: 세상에서 환경세팅이 젤 힘들었어요</p>
+            <!--  <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
               <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+            </div> -->
           </div>
 
         </div>
