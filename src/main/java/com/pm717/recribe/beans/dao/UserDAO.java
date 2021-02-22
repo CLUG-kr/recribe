@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 import org.apache.ibatis.annotations.Param;
 
-public interface MemberDAO {
-	
+public interface UserDAO {
+	public int isUserIdDuplicate();
+	public int isUserNicknameDuplicate();
 	
 }
