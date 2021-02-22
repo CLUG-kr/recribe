@@ -1,5 +1,7 @@
 package com.pm717.recribe;
 
+import java.util.Map;
+
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
@@ -13,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.pm717.recribe.beans.C;
+import com.pm717.recribe.beans.UserDTO;
+import com.pm717.recribe.beans.dao.UserDAO;
 
 @Controller
 public class MemberController {
@@ -59,6 +63,19 @@ public class MemberController {
 	@RequestMapping(value="/signUp", method = RequestMethod.GET)
 	public String signUp(Model model) {
 		return "/signUp"; 
+	}
+	
+	@RequestMapping(value="/signUpOk", method = RequestMethod.POST)
+	public String signUpOk(Model model, UserDTO user) {
+		model.addAttribute("user", user);
+		
+		int cnt = 0;
+		UserDAO dao = C.sqlSession.getMapper(UserDAO.class);
+		
+		cnt = dao.insertUser(user);
+		model.addAttribute("result", cnt);
+		System.out.println("たたたたたたたた");
+		return "/signUpOk"; 
 	}
 	
 

@@ -132,28 +132,22 @@
         </div>
 
         <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-center" style="margin:0px auto">
-			<form class="php-email-form" action="${pageContext.request.contextPath}/login">
+			<form class="php-email-form" action="${pageContext.request.contextPath}/signUpOk">
 				<div class="form-group col-md-6" style="float:left">
-					<input class="form-control" name="id" id="id" placeholder="아이디">
-				</div>
-				<div class="form-group col-md-6" style="float:left;padding-left:20px;">
-					<button class="signUp" id="isIdDuplicate">아이디 중복확인</button><br>
-				</div>
-				<div class="form-group col-md-6" style="float:left">
-					<input type="email" class="form-control" name="email" id="email" placeholder="이메일">
+					<input type="email" class="form-control" name="user_email" id="email" placeholder="이메일">
 				</div>
 				<div class="form-group col-md-6" style="float:left;padding-left:20px;">
 					<button class="signUp" id="signUp">이메일 인증</button><br>
 				</div>
 				<div class="form-group col-md-6" style="float:left">
-				<input class="form-control" name="nickname" id="nickname" placeholder="닉네임">
+				<input class="form-control" name="user_nickname" id="nickname" placeholder="닉네임">
 				</div>
 				<div class="form-group col-md-6" style="float:left;padding-left:20px;">
 					<button class="signUp" id="isNicknameDuplicate">닉네임 중복확인</button><br>
 				</div>
 				<div class="form-group">
-				<input class="form-control" name="name" id="name" placeholder="이름"><br>
-				<input type="password" class="form-control" name="pw" id="password" placeholder="비밀번호"><br>
+				<input class="form-control" name="user_name" id="name" placeholder="이름"><br>
+				<input type="password" class="form-control" name="user_password" id="password" placeholder="비밀번호"><br>
 				<input type="password" class="form-control" name="pwOk" id="password" placeholder="비밀번호 확인">
 				</div>
 				<div class="text-center"><button type="submit" id="submit">회원가입</button></div>
@@ -260,8 +254,8 @@
   <script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
   
   <script>
-  $("#submit").click();
-  
+  //$("#submit").click();
+/*   
   function chkSubmit(){
 		
 		var id = $("#id").val();
@@ -276,22 +270,18 @@
 		if(pw == ""){
 			alert("비밀번호를 입력해주세요.");
 		}
-		if(mb_pwOk == ""){
+		if(pwOk == ""){
 			alert("비밀번호 재확인을 해주세요.");
 		}
-		if(mb_name == ""){
+		if(name == ""){
 			alert("이름을 입력해주세요.");
 		}
-		if(mb_tel == ""){
-			alert("연락처를 입력해주세요.");
-		}
-		if(mb_email == ""){
+		if(email == ""){
 			alert("이메일을 입력해주세요.");
 		}
-		if(mb_pw != mb_pwOk){
+		if(pw !=pwOk){
 			alert("비밀번호가 일치하지 않습니다.");
 		} else {
-			return true;
 		}
 	}
   
@@ -299,7 +289,7 @@
 		$.ajax{
 			
 		}	
-});
+}); */
   </script>
 
 </body>

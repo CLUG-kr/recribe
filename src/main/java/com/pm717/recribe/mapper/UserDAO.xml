@@ -9,6 +9,11 @@
 	<select id="isUserNicknameDuplicate" resultType="int">
 		SELECT count(*) FROM user WHERE user_nickname = #{nickname}
 	</select>
+	
+	<insert id="insertUser" flushCache="true" parameterType="com.pm717.recribe.beans.UserDTO">
+		INSERT INTO user (user_name, user_nickname, user_password, user_email)
+		VALUES (#{user_name}, #{user_nickname}, #{user_password}, #{user_email})
+	</insert>
 </mapper>
 
 
