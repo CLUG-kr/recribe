@@ -20,7 +20,6 @@ select * from groups;
 select * from friend;
 select * from reply;
 
-
 -- user Table Create SQL
 CREATE TABLE user
 (
@@ -34,6 +33,12 @@ CREATE TABLE user
     `user_date`      DATETIME       NULL        DEFAULT now()	COMMENT '사용자 가입날짜' , 
     PRIMARY KEY (user_uid)
 );
+
+ALTER TABLE user
+    ADD CONSTRAINT UC_user_email UNIQUE (user_email);
+
+ALTER TABLE user
+    ADD CONSTRAINT UC_user_nickname UNIQUE (user_nickname);
 
 ALTER TABLE user COMMENT '사용자';
 
@@ -73,6 +78,7 @@ ALTER TABLE board
     ADD CONSTRAINT FK_board_user_id_user_user_uid FOREIGN KEY (user_id)
         REFERENCES user (user_uid) ON DELETE cascade ON UPDATE RESTRICT;
 
+       
 
 -- user Table Create SQL
 CREATE TABLE platform
@@ -187,6 +193,7 @@ CREATE TABLE like_review
 );
 
 ALTER TABLE like_review COMMENT '리뷰 좋아요';
+
 
 ALTER TABLE like_review
     ADD CONSTRAINT FK_like_review_user_id_user_user_uid FOREIGN KEY (user_id)

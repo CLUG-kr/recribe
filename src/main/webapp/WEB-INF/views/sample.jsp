@@ -45,23 +45,23 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Recribe</a></h1>
+      <h1 class="logo me-auto"><a href="${pageContext.request.contextPath}/main">Recribe</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="search">검색하기</a></li>
-          <li><a href="review">리뷰보기</a></li>
-          <li><a href="community">소통하기</a></li>
-          <li><a href="friend">친구목록</a></li>
-          <li><a href="group">그룹찾기</a></li>
+          <li class="active"><a href="${pageContext.request.contextPath}/main">Home</a></li>
+          <li><a href="${pageContext.request.contextPath}/search">검색하기</a></li>
+          <li><a href="${pageContext.request.contextPath}/review">리뷰보기</a></li>
+          <li><a href="${pageContext.request.contextPath}/community">소통하기</a></li>
+          <li><a href="${pageContext.request.contextPath}/friend">친구목록</a></li>
+          <li><a href="${pageContext.request.contextPath}/group">그룹찾기</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="loginOrSignup" class="get-started-btn scrollto">로그인/회원가입</a>
+      <a href="${pageContext.request.contextPath}/loginOrSignup" class="get-started-btn scrollto">로그인/회원가입</a>
 
     </div>
   </header><!-- End Header -->

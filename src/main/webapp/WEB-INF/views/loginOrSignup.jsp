@@ -45,13 +45,13 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Recribe</a></h1>
+      <h1 class="logo me-auto"><a href="${pageContext.request.contextPath}/main">Recribe</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="${pageContext.request.contextPath}/active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="${pageContext.request.contextPath}/main">Home</a></li>
           <li><a href="${pageContext.request.contextPath}/search">검색하기</a></li>
           <li><a href="${pageContext.request.contextPath}/review">리뷰보기</a></li>
           <li><a href="${pageContext.request.contextPath}/community">소통하기</a></li>
@@ -137,7 +137,7 @@
 				<input class="form-control" name="id" placeholder="아이디"><br>
 				<input type="password" class="form-control" name="password" placeholder="비밀번호">
 				</div>
-				<div class="text-center"><button type="submit">로그인</button></div>
+				<div class="text-center"><button type="button">로그인</button></div>
 			</form>
         </div>
 

@@ -7,8 +7,9 @@ import org.apache.ibatis.annotations.Param;
 import com.pm717.recribe.beans.UserDTO;
 
 public interface UserDAO {
-	public int isUserIdDuplicate();
-	public int isUserNicknameDuplicate();
+	public int isUserEmailDuplicate(String email);
+	public int isUserNicknameDuplicate(String nickname);
 	public int insertUser(UserDTO user);
+	public String findEmailByNickname(String nickname);
 	
 }

@@ -124,49 +124,117 @@
       </div>
     </section><!-- End Cliens Section -->
 
-    <section id="contact" class="contact">
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>회원가입</h2>
+          <h2>리뷰 보기</h2>
         </div>
 
-        <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-center" style="margin:0px auto">
-			<form id="joinForm" class="php-email-form" action="${pageContext.request.contextPath}/signUpOk">
-				<div class="form-group col-md-6" style="float:left">
-					<input type="email" class="form-control" name="user_email" id="user_email" placeholder="이메일" required>
-				</div>
-				<div class="form-group col-md-6" style="float:left;padding-left:20px;">
-					<button type="button" class="signUp" id="emailChkBtn">이메일 인증</button><br>
-				</div>
-				<div class="form-group col-md-6" style="float:left">
-					<input class="form-control" id="user_email_num" placeholder="이메일 인증번호 입력" required>
-				</div>
-				<div class="form-group col-md-6" style="float:left;padding-left:20px;">
-					<button class="signUp" id="emailNumChkBtn">확인</button><br>
-				</div>
-				<div class="form-group col-md-6" style="float:left">
-				<input class="form-control" name="user_nickname" id="user_nickname" placeholder="닉네임" required>
-				</div>
-				<div class="form-group col-md-6" style="float:left;padding-left:20px;">
-					<button class="signUp" id="nicknameDuplicateChkBtn">닉네임 중복확인</button><br>
-				</div>
-				<div class="form-group">
-				<input class="form-control" name="user_name" id="user_name" placeholder="이름"><br>
-				<input type="password" class="form-control" name="user_password" id="user_password" placeholder="비밀번호" required><br>
-				<input type="password" class="form-control" name="user_passwordOk" id="user_passwordOk" placeholder="비밀번호 확인" required>
-				</div>
-				<div class="text-center"><button type="button" id="registerBtn">회원가입</button></div>
-				<input type="hidden" id="nicknameOk">
-				<input type="hidden" id="emailOk">
-				<input type="hidden" id="emailNum">
-				<input type="hidden" id="emailNumOk">
-				<input type="hidden" id="submitOk">
-			</form>
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section>
+    </section><!-- End Portfolio Section -->
 
   </main><!-- End #main -->
 
@@ -261,168 +329,6 @@
 
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
-  
-  <script>
-
-  	$("#submitOk").val(0);
-  	
-	var nicknameDuplicateCheck = function nicknameDuplicateCheck(e) {
-		var token = $("meta[name='_csrf']").attr("content");
-		var header = $("meta[name='_csrf_header']").attr("content");
-		$("#nicknameOk").val(2);
-		
-		var nickname = $("#user_nickname").val();
-		
-		if (nickname.length >= 2 && nickname.length <= 8) {
-			$.ajax({
-				type: 'post',
-				url: '${pageContext.request.contextPath}/isNicknameDuplicate',
-				data: {
-					nickname: nickname
-				},
-				dataType: 'json',
-				success: function success(data) {
-
-					if(data == 0) {
-						$("#nicknameOk").val(1);
-						alert("사용 가능한 닉네임 입니다.");
-					} else {
-						$("#nicknameOk").val(0);
-						alert("이미 가입된 닉네임 입니다.");
-					}
-				},
-				error: function() {
-					
-				}
-			});
-		}
-		else {
-			alert("2~8자리의 닉네임을 입력해 주세요.");
-		}
-	}
-	
-	var emailCheck = function emailCheck(e) {
-		var token = $("meta[name='_csrf']").attr("content");
-		var header = $("meta[name='_csrf_header']").attr("content");	
-		
-		$("#emailOk").val(2);
-		var email = $("#user_email").val();
-		
-		if ($("#user_email").val() != "") {
-			
-			$.ajax({
-				type: 'post',
-				url: '${pageContext.request.contextPath}/isEmailDuplicate',
-				data: {
-					email: email
-				},
-				dataType: "json", 
-				success: function success(data) {
-					
-					if(data == 0) {
-						$("#emailOk").val(1);
-						alert("사용 가능한 이메일 입니다.");
-						
-						alert("인증번호 발송에 다소 시간이 소요될 수 있습니다. 잠시만 기다려주세요.");
-
-						$.ajax({
-							type: 'post',
-							url: '${pageContext.request.contextPath}/sendEmailNumber',
-							data: {
-								email: email
-							},
-							dataType: 'json',
-							success: function success(data) {
-								
-								if(data != '0') {
-									alert("인증번호를 이메일로 전송하였습니다.");
-									$("#emailNum").val(data);
-								} else {
-									alert("오류가 발생하였습니다. 이메일을 다시 확인해주세요");
-									$("#emailNum").val(0);
-								}
-							},
-							error: function(data, msg) {
-								alert(data+msg);
-								
-							}
-						});
-								
-					} else {
-						$("#emailOk").val(0);
-						alert("이미 가입된 이메일 입니다.");
-					}
-				},
-				error: function(err) {
-					alert(err);
-				}
-			});
-			
-		}else {
-			alert("아매알 주소를 입력해 주세요.");
-		}
-		
-	}
-	
-	const joinConfirm = function(e) {
-
-			if($("#user_email").val() == "") {
-				alert("이메일 주소를 입력해 주세요.");
-			}
-			else if($("#emailOk").val() != 1){
-				alert("이미 가입된 이메일입니다.");
-			}
-			else if($("#emailNum").val() != $("#user_email_num").val()){
-				alert("인증번호를 다시 입력해주세요.");
-			}
-			else if($("#emailNumOk").val() == 0){
-				alert("이메일 인증이 필요합니다.");
-			}
-			else if($("#user_nickname").val() == ""){
-				alert("닉네임을 입력해주세요.");
-			}
-			else if (!$("#user_nickname").val().length >= 2 && $("#user_nickname").val().length <= 8) {
-				alert("2~8자리의 닉네임을 입력해 주세요.");
-			}
-			else if($("#nicknameOk").val() != 1){
-				alert("이미 가입된 닉네임입니다.");
-			}
-			else if($("#user_password").val().length < 5) {
-				alert("비밀번호를 5자 이상 입력해 주세요.");
-			}
-			else if($("#user_password").val() != $("#user_passwordOk").val()) {
-				alert("비밀번호가 같지 않습니다. 비밀번호를 다시 입력해주세요.");
-			}
-			else {
-				$("#joinForm").submit();
-				$("#submitOk").val(1);
-				
-				if($("#submitOk").val() == 1){
-					alert("가입이 완료되었습니다. 로그인 후 레크라이브의 서비스를 즐겨보세요!");
-					location.href="${pageContext.request.contextPath}/loginOrSignup";
-				}
-
-			}
-	}
-	
-	var emailNumCheck = function emailNumCheck(emailNum) {
-		var emailNum = $("#emailNum").val();
-
-		if(emailNum == $("#user_email_num").val()){
-			alert("인증에 성공하였습니다.");
-			$("#emailNumOk").val(1);
-		}else{
-			alert("인증에 실패하였습니다. 인증번호를 다시 입력해주세요.");
-			$("#emailNumOk").val(0);
-		}
-	}
-	
-	$("#emailNumChkBtn").click(emailNumCheck);
-	$("#emailChkBtn").click(emailCheck);
-	$("#registerBtn").click(joinConfirm);
-	$("#nicknameDuplicateChkBtn").click(nicknameDuplicateCheck);
-
-  </script>
 
 </body>
 
